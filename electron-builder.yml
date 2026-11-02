@@ -1,0 +1,39 @@
+appId: com.subtitlestudio.app
+productName: SubtitleStudio
+copyright: Copyright © 2026 SubtitleStudio
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - out/**/*
+  - package.json
+
+# Never ship local secrets or the dev runtime folder.
+extraMetadata:
+  main: out/main/index.js
+
+asar: true
+
+win:
+  target:
+    - nsis
+  artifactName: ${productName}-${version}-setup.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+
+mac:
+  target:
+    - dmg
+  category: public.app-category.productivity
+  artifactName: ${productName}-${version}.${ext}
+
+linux:
+  target:
+    - AppImage
+  category: Utility
+  artifactName: ${productName}-${version}.${ext}

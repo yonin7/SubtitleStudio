@@ -1,0 +1,117 @@
+.editor {
+  --editor-cols: 56px 110px 1fr 1fr 52px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.editor--no-cps {
+  --editor-cols: 56px 110px 1fr 1fr;
+}
+
+.editor__header {
+  display: grid;
+  grid-template-columns: var(--editor-cols);
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.editor__scroll {
+  flex: 1;
+  overflow-y: auto;
+  contain: strict;
+}
+
+.editor__sizer {
+  position: relative;
+  width: 100%;
+}
+
+.editor__row-wrap {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+}
+
+.srow {
+  display: grid;
+  grid-template-columns: var(--editor-cols);
+  gap: var(--space-3);
+  align-items: stretch;
+  height: 100%;
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+  border-inline-start: 3px solid transparent;
+}
+.srow:hover {
+  background: var(--bg-surface);
+}
+
+.srow--ai_translated {
+  border-inline-start-color: var(--info);
+}
+.srow--manual {
+  border-inline-start-color: var(--accent-primary);
+}
+.srow--reviewed {
+  border-inline-start-color: var(--success);
+}
+.srow--skipped {
+  opacity: 0.5;
+}
+
+.srow__id {
+  color: var(--text-muted);
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.srow__time {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.srow__original {
+  font-size: 13px;
+  color: var(--text-secondary);
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.srow__translation {
+  resize: none;
+  border: 1px solid transparent;
+  background: var(--bg-surface);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  font-size: 14px;
+  line-height: 1.4;
+  height: 100%;
+}
+.srow__translation:hover {
+  border-color: var(--border-strong);
+}
+.srow__translation:focus {
+  border-color: var(--accent-primary);
+  background: var(--bg-elevated);
+}
+
+.srow__cps {
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.srow__cps.is-warning {
+  color: var(--warning);
+  font-weight: 600;
+}

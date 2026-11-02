@@ -1,0 +1,97 @@
+.workflow {
+  width: min(520px, 100%);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+}
+
+.workflow__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.workflow__head h2 {
+  font-size: 16px;
+}
+.workflow__close {
+  font-size: 22px;
+  color: var(--text-muted);
+}
+
+.workflow__intro {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.workflow__modules {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.workflow__module {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+.workflow__module:has(input:checked) {
+  border-color: var(--accent-primary);
+  background: var(--accent-subtle);
+}
+.workflow__module strong {
+  display: block;
+  font-size: 13px;
+}
+.workflow__hint {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.workflow__fieldset {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.workflow__fieldset legend {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 0 var(--space-1);
+}
+.workflow__radio {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 13px;
+}
+
+.workflow__ref {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.workflow__warnings {
+  font-size: 12px;
+  color: var(--warning, #e6a23c);
+  padding-inline-start: var(--space-4);
+}
+
+.workflow__foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,109 @@
+.settings {
+  height: 100%;
+  overflow-y: auto;
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 880px;
+}
+
+.settings--loading {
+  color: var(--text-muted);
+}
+
+.settings__section {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.settings__section h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.settings__hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.settings__actions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.settings__providers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-3);
+}
+
+.provider-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.provider-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.provider-card__badge {
+  font-size: 11px;
+  padding: 1px 8px;
+  border-radius: 999px;
+}
+.provider-card__badge.is-on {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--success);
+}
+.provider-card__badge.is-off {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--warning);
+}
+.provider-card__usage {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.provider-card__error {
+  font-size: 11px;
+  color: var(--error);
+}
+
+.settings__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-3);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.field--checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-2);
+}
+.field--checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent-primary);
+}
+
+.settings__section .btn {
+  align-self: flex-start;
+}

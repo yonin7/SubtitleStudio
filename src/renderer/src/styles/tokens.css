@@ -1,0 +1,62 @@
+:root {
+  /* Background levels */
+  --bg-base: #0f0f11;
+  --bg-surface: #1a1a1f;
+  --bg-elevated: #242429;
+  --bg-hover: #2e2e35;
+
+  /* Accent */
+  --accent-primary: #6366f1;
+  --accent-hover: #818cf8;
+  --accent-subtle: #1e1e4a;
+
+  /* Semantic */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+  --muted: #6b7280;
+
+  /* Chunk status */
+  --chunk-completed: #22c55e;
+  --chunk-active: #3b82f6;
+  --chunk-paused: #f59e0b;
+  --chunk-failed: #ef4444;
+  --chunk-pending: #374151;
+  --chunk-skipped: #4b5563;
+  --chunk-unreviewed: #818cf8;
+
+  /* Text */
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+
+  /* Borders */
+  --border-subtle: #2a2a31;
+  --border-strong: #3a3a44;
+
+  /* Fonts */
+  --font-ui: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-hebrew: 'Heebo', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Courier New', monospace;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Shadow */
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+
+  /* Layout */
+  --topbar-height: 56px;
+  --sidebar-width: 280px;
+}

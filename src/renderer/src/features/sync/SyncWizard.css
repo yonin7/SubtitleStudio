@@ -1,0 +1,88 @@
+.sync {
+  width: min(520px, 100%);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.sync__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.sync__head h2 {
+  font-size: 16px;
+}
+.sync__close {
+  font-size: 22px;
+  line-height: 1;
+  color: var(--text-muted);
+  padding: 0 var(--space-2);
+}
+.sync__close:hover {
+  color: var(--text-primary);
+}
+
+.sync__section {
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.sync__section h3 {
+  font-size: 13px;
+  color: var(--text-primary);
+}
+.sync__hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.sync__row {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+}
+.sync__row--wrap {
+  flex-wrap: wrap;
+}
+.sync__row input[type='number'] {
+  width: 120px;
+  padding: var(--space-2);
+  background: var(--bg-input);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+}
+.sync__row label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.sync__row select {
+  padding: var(--space-2);
+  background: var(--bg-input);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+}
+.sync__unit {
+  align-self: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.sync__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+}
